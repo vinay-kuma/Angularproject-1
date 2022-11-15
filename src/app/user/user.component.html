@@ -1,0 +1,14 @@
+
+   <div class="col-md-12">
+    <div class="box my-3 p-2">
+    <div>Id: {{user.id}}</div>
+    <div>Name: {{user.name}}</div>
+    <div>Address:{{user.address}}</div>
+    <div>Occupation: {{user.occupation}}</div>
+    <hr>
+    <div>
+      <button class="btn btn-primary" (click)="onUserSelect()" [ngStyle]="{'color': 'button'? 'red' : 'blue'}">Select User</button>
+      <!-- <div [ngStyle]="{'color': variable ? 'red' : 'blue'}"></div> -->
+    </div>
+    </div>
+</div>

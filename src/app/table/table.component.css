@@ -1,0 +1,10 @@
+.style
+table, th, td {
+    border: 1px solid black
+ }
+ /* .table{
+    background-color: aquamarine;
+ } */
+ /* .mat-row:nth-child(odd){
+    background: rgba(0,0,0,0.025);
+  } */

@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Component, OnInit} from '@angular/core';
+
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angularproject-1';
+ constructor(private http: HttpClient) {}
+
+ ngOnInit() {
+  // API Call
+  let headers = new HttpHeaders({
+    'x-rapidapi-host': 'random-facts2.p.rapidapi.com',
+    'x-rapidapi-key': 'your-api-key'
+  });
+  this.http
+    .get<any>('https://random-facts2.p.rapidapi.com/getfact', {
+      headers: headers
+    })
+    .subscribe(data => {
+      console.log(data);
+    });
+}
 }

@@ -1,0 +1,43 @@
+ 
+ <p>
+    <label><mark>Choose color :-</mark> </label>
+    <select>
+      <option>Red</option>
+      <option>Blue</option>
+      <option>Green</option>
+      <option>Yellow</option> 
+    </select>
+    </p>
+    <!-- <style>
+      table, th, td {
+         border: 1px solid black;
+      }
+   </style> -->
+   <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  
+   <h1><ins>{{ title }}</ins>:-</h1>
+        <table class="col-md-4">
+          <!-- <div [ngStyle]="{'color': border ? 'red' : 'blue'}"></div>  -->
+           <table style="background-color:rgb(186, 232, 176)">
+            <!-- <table> -->
+          <thead>
+            <tr>
+              <th>FirstName</th>
+              <th>LastName</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+        <tbody>
+          <tr  *ngFor="let People of data;">
+            <td>{{People.FirstName}}</td>
+            <td>{{People.LastName}}</td>
+            <td>{{People.Age}}</td>
+          </tr>
+        </tbody>
+      </table> 
+  
+  <!-- <button click -->
