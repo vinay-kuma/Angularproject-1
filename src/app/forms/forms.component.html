@@ -15,12 +15,13 @@
   <p>
   <label for="name"> Name :- </label>
   <input type="text" style="text-transform: uppercase" id="name" name="name" formControlName="name">
-  </p>
+ <!-- <span *ngIf="!contactForm.get('name').valid && contactForm.get('name').touched" class="help-block" >Please Enter The Name </span>  -->
+</p>
   
   
   <p>
   <label for="email">Email :-</label>
-  <input type="text" id="email" name="email" formControlName="email">
+  <input type="email" id="email" name="email" formControlName="email">
   </p>
   
   

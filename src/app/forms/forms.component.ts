@@ -9,11 +9,12 @@ import { FormGroup, FormControl, Validators } from '@angular/forms'
 export class FormsComponent implements OnInit {
 
   contactForm = new FormGroup({
-    name: new FormControl(),
+    name: new FormControl(null, Validators.required),
     email: new FormControl(),
     human: new FormControl(),
     country: new FormControl()
-  })
+  });
+  
 
   
   // contactForm = new FormGroup({

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-table',
@@ -22,7 +22,7 @@ People:any;
   
   }
 }
-function clickEvent() {
-  throw new Error('Function not implemented.');
-}
+// function clickEvent() {
+//   throw new Error('Function not implemented.');
+// }
 
